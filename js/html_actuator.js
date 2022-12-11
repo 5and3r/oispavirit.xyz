@@ -14,7 +14,7 @@ function HTMLActuator() {
 }
 
 dogeSayings = ['"Iha 50cc on"', 'Maanantai!', 'Keulii!', 'Stuntti SEIS!', 'Lauantai!', 'Jaksaa!', 'Kohti lippaa ja sen yli!', 'Kova meno!',
-    'Normipäivä!', 'Nyt on!','Kuumotus!','Ympäri :D','#vakio','Sutii!','Lipalle!']
+    'Normipäivä!', 'Nyt on!','Kuumotus!','Ympäri :D','#vakio','Sutii!','Lipalle!','#eilähekäyntiin']
 
 HTMLActuator.prototype.actuate = function (grid, metadata) {
   var self = this;
@@ -135,19 +135,25 @@ HTMLActuator.prototype.updateScore = function (score) {
   
   if (difference > 0) {
 
-                var a =  Math.floor((Math.random() * 4) + 1);
+                var a =  Math.floor((Math.random() * 6) + 1);
             if (a == 1) {
                 snd = new Audio("/open1.mp3");  
             }
             if (a == 2) {
-                snd = new Audio("/open2.mp3");  
+                snd = new Audio("/open1.mp3");  
             }
             if (a == 3) {
-                snd = new Audio("/open3.mp3");  
+                snd = new Audio("/open2.mp3");  
             }  
             if (a == 4) {
-                snd = new Audio("/open4.mp3");  
+                snd = new Audio("/open2.mp3");  
             }   
+            if (a == 5) {
+                snd = new Audio("/open3.mp3");  
+            }  
+            if (a == 6) {
+                snd = new Audio("/open4.mp3");  
+            }    
             
     var addition = document.createElement("div");
     addition.classList.add("score-addition");
