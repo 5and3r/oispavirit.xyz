@@ -140,19 +140,19 @@ HTMLActuator.prototype.updateScore = function (score) {
                 snd = new Audio("/open1.mp3");  
             }
             if (a == 2) {
-                snd = new Audio("/open1.mp3");  
+                snd = new Audio("/open2.mp3");  
             }
             if (a == 3) {
-                snd = new Audio("/open2.mp3");  
-            }  
-            if (a == 4) {
-                snd = new Audio("/open2.mp3");  
-            }   
-            if (a == 5) {
                 snd = new Audio("/open3.mp3");  
             }  
-            if (a == 6) {
+            if (a == 4) {
                 snd = new Audio("/open4.mp3");  
+            }   
+            if (a == 5) {
+                snd = new Audio("/open5.mp3");  
+            }  
+            if (a == 6) {
+                snd = new Audio("/open6.mp3");  
             }    
             
     var addition = document.createElement("div");
