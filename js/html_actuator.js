@@ -135,7 +135,7 @@ HTMLActuator.prototype.updateScore = function (score) {
   
   if (difference > 0) {
 
-                var a =  Math.floor((Math.random() * 6) + 1);
+                var a =  Math.floor((Math.random() * 4) + 1);
             if (a == 1) {
                 snd = new Audio("/open1.mp3");  
             }
